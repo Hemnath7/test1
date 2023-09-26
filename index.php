@@ -10,6 +10,7 @@
 </head>
 <body>
     <h1>Hello</h1>
+    <a href="add.php"></a>
     <?php
   
 
