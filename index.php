@@ -11,15 +11,7 @@
 <body>
     <h1>Hello</h1>
     <?php
-   try{
-    $stmt = $pdo->prepare("INSERT INTO movies (title, score) VALUES(:t, :s)");
-    $stmt->bindValue(':t', "Test", PDO::PARAM_STR);
-    $stmt->bindValue(':s', 5, PDO::PARAM_INT);
-    $stmt->execute();
-    echo "Query executed successfully!";
-   } catch(PDOException $e){
-    echo "Error: " . $e->getMessage();
-   }
+  
 
         $statement = $pdo->query("SELECT * FROM movies");
         // 
